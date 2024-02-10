@@ -3,6 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from './pages/Home';
 import TSR from './pages/TSR';
+import Interpolate from './pages/Interpolate';
 
 const Stack = createNativeStackNavigator();
 
@@ -18,10 +19,18 @@ const App = () => {
         <Stack.Screen
           name="TSR"
           component={TSR}
-          // options={{
-          //   headerTitle: 'Translation, Scaling & Rotation',
-          //   headerTitleAlign: 'center',
-          // }}
+          options={{
+            headerTitle: 'Translation, Scaling & Rotation',
+            headerTitleAlign: 'center',
+          }}
+        />
+        <Stack.Screen
+          name="Interpolate"
+          component={Interpolate}
+          options={{
+            headerTitle: 'Interpolate',
+            headerTitleAlign: 'center',
+          }}
         />
       </Stack.Navigator>
     </NavigationContainer>

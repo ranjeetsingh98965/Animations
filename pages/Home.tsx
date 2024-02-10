@@ -18,6 +18,12 @@ const Home = () => {
         onPress={() => navigation.navigate('TSR')}>
         <Text style={styles.cardTxt}>Translation, Scaling & Rotation</Text>
       </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.card}
+        onPress={() => navigation.navigate('Interpolate')}>
+        <Text style={styles.cardTxt}>Interpolate (Change Size & Shape)</Text>
+      </TouchableOpacity>
     </ScrollView>
   );
 };
